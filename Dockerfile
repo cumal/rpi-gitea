@@ -26,6 +26,7 @@ RUN chmod 755 /go/src/code.gitea.io/gitea/environment-to-ini
 RUN chmod 644 /go/src/code.gitea.io/gitea/contrib/autocompletion/bash_autocomplete
 
 FROM alpine:3.20
+LABEL org.opencontainers.image.source=https://github.com/cumal/rpi-gitea
 
 ARG BUILD_VERSION=1.22.6
 ARG REPO_URL=https://github.com/go-gitea/gitea.git
