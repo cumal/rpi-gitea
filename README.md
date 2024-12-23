@@ -27,7 +27,7 @@ services:
     image: ghcr.io/cumal/rpi-gitea:arm
     restart: always
     volumes:
-      - ./teampass-html:/data
+      - ./gitea-data:/data
     ports:
       - 2200:22
       - 3000:3000
